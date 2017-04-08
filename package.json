@@ -20,7 +20,7 @@
     },
     "devDependencies": {
         "eslint":                         "~3.19.0",
-        "eslint-config-standard":         "~10.0.0",
+        "eslint-config-standard":         "~10.2.0",
         "eslint-plugin-standard":         "~2.2.0",
         "eslint-plugin-promise":          "~3.5.0",
         "eslint-plugin-import":           "~2.2.0",
@@ -29,13 +29,13 @@
     },
     "dependencies" : {
         "eslint":                         "~3.19.0",
-        "eslint-config-standard":         "~10.0.0",
-        "eslint-plugin-standard":         "~2.1.1",
+        "eslint-config-standard":         "~10.2.0",
+        "eslint-plugin-standard":         "~3.0.1",
         "eslint-plugin-promise":          "~3.5.0",
         "eslint-plugin-import":           "~2.2.0",
         "eslint-plugin-node":             "~4.2.2",
         "babel-eslint":                   "~7.2.1",
-        "gemstone-config-eslint":         "~0.9.0"
+        "gemstone-config-eslint":         "~0.9.4"
     },
     "engines": {
         "node":                           ">=6.0.0"
