@@ -23,19 +23,19 @@
         "eslint-config-standard":         "11.0.0",
         "eslint-plugin-standard":         "3.0.1",
         "eslint-plugin-promise":          "3.7.0",
-        "eslint-plugin-import":           "2.10.0",
+        "eslint-plugin-import":           "2.11.0",
         "eslint-plugin-node":             "6.0.1",
-        "babel-eslint":                   "8.2.2"
+        "babel-eslint":                   "8.2.3"
     },
     "dependencies" : {
         "eslint":                         "4.19.1",
         "eslint-config-standard":         "11.0.0",
         "eslint-plugin-standard":         "3.0.1",
         "eslint-plugin-promise":          "3.7.0",
-        "eslint-plugin-import":           "2.10.0",
+        "eslint-plugin-import":           "2.11.0",
         "eslint-plugin-node":             "6.0.1",
-        "babel-eslint":                   "8.2.2",
-        "gemstone-config-eslint":         "0.9.21"
+        "babel-eslint":                   "8.2.3",
+        "gemstone-config-eslint":         "0.9.22"
     },
     "engines": {
         "node":                           ">=7.6.0"
