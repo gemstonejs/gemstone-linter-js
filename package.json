@@ -35,7 +35,7 @@
         "eslint-plugin-import":           "2.16.0",
         "eslint-plugin-node":             "8.0.1",
         "babel-eslint":                   "10.0.1",
-        "gemstone-config-eslint":         "0.9.31"
+        "gemstone-config-eslint":         "0.9.32"
     },
     "engines": {
         "node":                           ">=8.0.0"
