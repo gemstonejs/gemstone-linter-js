@@ -11,11 +11,11 @@ const ESLint    = require("eslint")
 /*  exported API function  */
 module.exports = async function (filenames, opts = {}, report = { sources: {}, findings: [] }) {
     /*  setup ESLint CLI engine  */
-    let rules = {}
+    const rules = {}
     if (opts.env === "development")
         rules["no-console"] = "off"
     Object.assign(rules, opts.rules)
-    let engine = new ESLint.CLIEngine({
+    const engine = new ESLint.CLIEngine({
         useEslintrc: false,
         configFile:  require.resolve("gemstone-config-eslint/eslint.yaml"),
         rules:       rules
@@ -31,13 +31,13 @@ module.exports = async function (filenames, opts = {}, report = { sources: {}, f
             opts.progress(i / filenames.length, `linting JS: ${filenames[i]}`)
 
         /*  execute ESLint on given source file  */
-        let result = engine.executeOnFiles([ filenames[i] ])
+        const result = engine.executeOnFiles([ filenames[i] ])
 
         /*  report linting results  */
         if (result.errorCount > 0 || result.warningCount > 0) {
             passed = false
             result.results.forEach((file) => {
-                let filename = path.relative(process.cwd(), file.filePath)
+                const filename = path.relative(process.cwd(), file.filePath)
                 report.sources[filename] = file.source
                 file.messages.forEach((msg) => {
                     let [ ruleProc, ruleId ] = [ "eslint", msg.ruleId ]
